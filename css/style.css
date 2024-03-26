@@ -6,11 +6,34 @@
 header{
     width: 100%;
     background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 ;
+    background: linear-gradient(to right, rgba(246,29,29,1), gray);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-imagem{
+    width: 50px;
+    height: 50px;
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    display: inline-block;
+    margin: 0 80px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
 }
 
 body{
     background-color: black;
 }
-h1{
-    color: white;
-}
+
