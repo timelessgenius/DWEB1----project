@@ -3,6 +3,6 @@
 
 Membros da equipe:
 
-Matheus Costa 
-Lucas Ravália
-Guilherme Viana
+Matheus Costa;
+Lucas Ravália;
+Guilherme Viana;
