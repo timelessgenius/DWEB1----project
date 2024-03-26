@@ -38,8 +38,8 @@ body{
 }
 .textimg1{
     color: white;
-    font-size: 14px;
-    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
 }
 .img1{
     position: relative;
@@ -48,4 +48,26 @@ body{
     top: 420px;
 
 }
-
+.textimg2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+.img2{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 750px;
+    top: 205px
+}
+.textimg3{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    
+}
+.img3{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 1250px;
+    top: -80px;
+}
