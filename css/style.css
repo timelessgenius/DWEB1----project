@@ -36,4 +36,16 @@ header{
 body{
     background-color: black;
 }
+.textimg1{
+    color: white;
+    font-size: 14px;
+    align-items: center;
+}
+.img1{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 200px;
+    top: 420px;
+
+}
 
