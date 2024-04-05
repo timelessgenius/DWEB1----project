@@ -44,7 +44,7 @@ body{
 .img1{
     position: relative;
     box-sizing: border-box;
-    margin: 0 200px;
+    margin: 0 350px;
     top: 210px;
 
 }
@@ -57,7 +57,7 @@ body{
 .img2{
     position: relative;
     box-sizing: border-box;
-    margin: 0 750px;
+    margin: 0 950px;
     top: 45px;
 }
 .textimg3{
@@ -70,6 +70,6 @@ body{
 .img3{
     position: relative;
     box-sizing: border-box;
-    margin: 0 1250px;
+    margin: 0 1550px;
     top: -120px;
 }
