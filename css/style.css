@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 header{
     width: 100%;
     background-color: black;
@@ -35,6 +37,21 @@ header{
 
 body{
     background-color: black;
+    max-width: 1980px;
+}
+
+@media(max-width: 1980px){
+    body{
+        background-color: black;
+        text-transform: arial;
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px){
+    body{
+        background-color: black;
+    }
 }
 .textimg1{
     color: white;
