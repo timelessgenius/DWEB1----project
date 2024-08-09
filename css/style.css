@@ -20,6 +20,7 @@ header .container {
     padding: 0 20px;
 }
 
+
 header h1 {
     margin: 0;
 }
@@ -119,4 +120,12 @@ footer .container {
     margin: 0 auto;
     padding: 0 5px;
     min-height: 20px;
+}
+
+.Instagram{
+    margin: 80px;
+}
+
+.Whatsapp{
+    margin: 80px;
 }
