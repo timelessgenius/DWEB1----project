@@ -194,3 +194,20 @@ footer {
     }
 }
 
+/*Divs para a parte dos contatos*/
+.Instagram{
+    margin: 20px;
+    padding: 40px;
+}
+.Whatsapp{
+    margin: 20px;
+    padding: 40px;
+}
+.Email{
+    margin: 20px;
+    padding: 40px;
+}
+
+.email_div{
+    margin: 15px;
+}
