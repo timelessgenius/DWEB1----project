@@ -143,14 +143,25 @@ form button {
 form button:hover {
     background-color: #A4D2FF;
 }
-
+/*
 footer {
-    background-color: #4169E1;
+    background-color: rgb(65, 105, 225);
     color: #fff;
     text-align: center;
     padding: 10px 0;
     width: 100%;
+}*/
+
+footer {
+    background-color: rgb(65, 105, 225);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
+
 
 @media (max-width: 768px) {
     header .principal {
@@ -210,4 +221,73 @@ footer {
 
 .email_div{
     margin: 15px;
+}
+
+/* Página do produto - Página de compra */
+
+.product {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    margin: auto;
+    padding: auto;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.product-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.price {
+    font-size: 1.25em;
+    color: hsl(215, 78%, 40%);
+    margin-bottom: 20px;
+}
+
+.quantity, .flavors {
+    margin-bottom: 20px;
+}
+
+.quantity label, .flavors label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.quantity input, .flavors select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: rgb(65, 105, 225);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.buy-button:hover {
+    background-color: rgb(209, 205, 175);
 }
