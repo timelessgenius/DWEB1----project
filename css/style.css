@@ -291,10 +291,10 @@ footer {
 .buy-button:hover {
     background-color: rgb(209, 205, 175);
 }
-/*Página de Login*/
+/*Página de Login e Registro*/
 
 .imagem{
-    background-image: url(/assets/logo_fundo_login.png);
+    background-image: url(/assets/wallpaper\ trembo.png);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -312,7 +312,7 @@ footer {
 .login h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000;
+    color: #ffff;
 }
 
 .input-group {
