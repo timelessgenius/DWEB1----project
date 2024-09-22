@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        // Função para carregar o carrinho do localStorage e exibir os itens
+        function carregarCarrinho() {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            const carrinhoLista = document.getElementById('carrinho');
+            const totalSpan = document.getElementById('total');
+            let total = 0;
+
+            // Limpa a lista do carrinho antes de adicionar os itens
+            carrinhoLista.innerHTML = '';
+
+            carrinho.forEach((produto, index) => {
+                const item = document.createElement('li');
+            item.innerHTML = `${produto.nome} - R$${produto.preco.toFixed(2)} 
+            <button class="remover" onclick="removerDoCarrinho(${index})">Remover</button>`;
+
+                carrinhoLista.appendChild(item);
+                total += produto.preco;
+            });
+
+            // Atualiza o total
+            totalSpan.textContent = total.toFixed(2);
+        }
+
+        // Função para remover um produto do carrinho
+        function removerDoCarrinho(index) {
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            
+            // Remove o item do carrinho pelo índice
+            carrinho.splice(index, 1);
+
+            // Atualiza o localStorage
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+            // Atualiza a exibição do carrinho
+            carregarCarrinho();
+        }
+
+        // Carrega o carrinho ao abrir a página
+        window.onload = carregarCarrinho;
+    </script>
+</head>
+<body>
+    <header>
+        <div class="principal">
+            <h2>CARRINHO DE COMPRAS</h2>
+                
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <ul id="carrinho">
+            <!-- Produtos adicionados ao carrinho serão exibidos aqui -->
+        </ul>
+
+        <p><strong>Total:</strong> R$<span id="total">0.00</span></p>
+
+        <button class="finalizar-compra" onclick="finalizarCompra()">Finalizar Compra</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TREMBOFIT SUPLEMENTOS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função de exemplo para finalizar compra
+        function finalizarCompra() {
+    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    if (carrinho.length === 0) {
+        alert('Adicione Produtos ao Carrinho'); // Mensagem se o carrinho estiver vazio
+        window.location.href = 'produtos.html'; // Redireciona para a página inicial
+    } else {
+        alert('Compra finalizada com sucesso!');
+        localStorage.removeItem('carrinho'); // Limpa o carrinho após a compra
+        window.location.href = '../index.html'; // Redireciona para a página inicial
+    }
+}
+
+    </script>
+</body>
+</html>

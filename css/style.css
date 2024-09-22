@@ -348,3 +348,39 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* Estilo para o botão de remover no carrinho */
+button.remover {
+    background-color: #FF6347; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 2px 5px; /* Ajuste do padding para ser mais compacto */
+    cursor: pointer; /* Mão ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 0.875rem; /* Tamanho da fonte */
+    margin-left: 5px; /* Espaço entre o texto do item e o botão */
+    width: auto; /* Largura automática */
+    max-width: 80px; /* Define uma largura máxima */
+    display: inline-block; /* Garante que o botão não expanda para a largura total */
+}
+
+button.remover:hover {
+    background-color: #FF7F50; /* Cor do botão ao passar o mouse */
+}
+
+button.finalizar-compra {
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 5px 10px; /* Ajuste do padding para ser mais compacto */
+    cursor: pointer; /* Mão ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 0.875rem; /* Tamanho da fonte reduzido */
+    max-width: 150px; /* Largura máxima */
+    display: inline-block; /* Garante que o botão não expanda para a largura total */
+}
+
+button.finalizar-compra:hover {
+    background-color: #A4D2FF; /* Cor ao passar o mouse */
+}
+

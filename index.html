@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TREMBOFIT - Inicio</title>
+    <title>TREMBOFIT - Início</title>
     <link rel="icon" href="assets/logoguia.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="principal">
             <h2>TREMBOFIT SUPLEMENTOS</h2>
-            
 
             <nav>
                 <ul>
@@ -20,7 +20,7 @@
                     <li><a href="html/contato.html">Contato</a></li>
                     <li><a href="html/login.html">Login</a></li>
                     <li><a href="html/registro.html">Registro</a></li>
-
+                    <li><a href="html/carrinho.html">Carrinho</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,7 +28,7 @@
 
     <main>
         <div class="principal">
-            <h2>Bem vindos(as) a TREMBOFIT</h2>
+            <h2>Bem-vindos(as) à TREMBOFIT</h2>
             <p>Explore nossa vasta gama de produtos de alta qualidade e preços que você nunca viu no mercado.</p>
         </div>
 
@@ -39,22 +39,22 @@
                     <img src="assets/strap.png" alt="Produto 1">
                     <h3>Strap para academia</h3>
                     <p>R$ 40,00</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button onclick="adicionarAoCarrinho('Strap para academia', 40)">Adicionar ao Carrinho</button>
                 </div>
                 <div class="produto">
                     <img src="assets/camisacreatina.jpg" alt="Produto 2">
                     <h3>Camisa Creatina Bomba</h3>
                     <p>R$ 110,00</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button onclick="adicionarAoCarrinho('Camisa Creatina Bomba', 110)">Adicionar ao Carrinho</button>
                 </div>
                 <div class="produto">
                     <img src="assets/bold2.png" alt="Produto 3">
                     <h3>BOLD COOKIES & CREAM</h3>
                     <p>R$ 170,00</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button onclick="adicionarAoCarrinho('BOLD COOKIES & CREAM', 170)">Adicionar ao Carrinho</button>
                 </div>
-                
             </div>
+        </div>
     </main>
 
     <footer>
