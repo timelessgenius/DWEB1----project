@@ -143,14 +143,6 @@ form button {
 form button:hover {
     background-color: #A4D2FF;
 }
-/*
-footer {
-    background-color: rgb(65, 105, 225);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}*/
 
 footer {
     background-color: rgb(65, 105, 225);
@@ -291,6 +283,7 @@ footer {
 .buy-button:hover {
     background-color: rgb(209, 205, 175);
 }
+
 /*Página de Login e Registro*/
 
 .imagem{
